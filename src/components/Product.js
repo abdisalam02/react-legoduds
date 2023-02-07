@@ -7,7 +7,6 @@ import ShoppingButton from "./ShoppingButton";
 export default function Product({name, cat, price}){
     return (
         <article className="product-card">
-            <ProductImage img src={"../images/mainbackground.png"} />
             <ProductTitle name="Dragon Zane"  />
             <ProductCategory cat="Ninjago" />
             <ProductPrice price="89 kr" />
