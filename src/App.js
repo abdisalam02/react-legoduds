@@ -2,21 +2,18 @@ import './App.css'
 import Product from './components/Product'
 import './css/main.css'
 import products from './products.json'
+import ContentPage from './components/ContentPage'
+import Header from './components/Header'
+import Nav from './components/Nav'
+import Titel from './components/Title'
 
 
 function App() {
   return (
-    <div className="App">
-      <div className='content-container'>
-      <main className='content'>
-        {products.map((product) =>{
-          return(
-          <Product key={product.prodid} name={product.title} price={product.price} cat={product.category} />
-          )
-        } 
-        )}
-     </main>
-     </div>
+    <div className="container">
+      <Header />
+      <Nav />
+      <ContentPage name="Ninjago"/>
     </div>
   );
 }

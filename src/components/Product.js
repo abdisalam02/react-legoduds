@@ -4,12 +4,13 @@ import ProductPrice from "./ProductPrice";
 import ProductTitle from "./ProductTitle";
 import ShoppingButton from "./ShoppingButton";
 
-export default function Product({name, cat, price}){
+export default function Product({name, cat, price, img}){
     return (
         <article className="product-card">
-            <ProductTitle name="Dragon Zane"  />
-            <ProductCategory cat="Ninjago" />
-            <ProductPrice price="89 kr" />
+            <img src={"./images/PROD_" +img} alt="Produktbilde av Zane" />
+            <ProductTitle name= {name}  />
+            <ProductCategory cat= {cat} />
+            <ProductPrice price= {price} />
             <ShoppingButton />
         </article>
     )
